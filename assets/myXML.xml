@@ -1,0 +1,36 @@
+<content>
+        <slides>
+        
+               <slide type="image">
+               <url>http://flashkurs.webbfarbror.se/playa/banjo.jpg</url>
+               <duration>20</duration>
+               </slide>
+               
+                 <slide type="video">
+                <url>http://flashkurs.webbfarbror.se/playa/hello.mp4</url>
+                </slide>
+              
+                 <slide type="sound">
+                 <url>
+                http://flashkurs.webbfarbror.se/playa/neworleanstwist.mp3
+                 </url>
+                <cover>
+                 http://flashkurs.webbfarbror.se/playa/happy-banjos.jpg
+                </cover>
+                </slide>
+             
+                <slide type="sound">
+                 <url>
+                http://flashkurs.webbfarbror.se/playa/septembersong.mp3
+                 </url>
+                  <cover>
+                 http://flashkurs.webbfarbror.se/playa/mucho-gusto.jpg
+                 </cover>
+                 </slide>
+
+                   <slide type="image">
+                  <url>http://flashkurs.webbfarbror.se/playa/gibson.jpg</url>
+                  <duration>10</duration>
+                  </slide>
+         </slides>
+</content>
