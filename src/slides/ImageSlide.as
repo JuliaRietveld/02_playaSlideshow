@@ -10,32 +10,34 @@ package slides
 	
 	public class ImageSlide extends SlideBase
 	{
-		private var _contajner:Sprite;
+		private var _container:Sprite;
 		private var _duration:Number;
 		private var _firstTime:Number;
 		
 		public function ImageSlide(url:String, duration:Number)
 		{
 			super(url);
-			_contajner=new Sprite();
-			addChild(_contajner);
+			_container=new Sprite();
+			addChild(_container);
 
-			_contajner.addChild(new ImageLoader(url));
+			_container.addChild(new ImageLoader(url));
 			
 			_duration=duration;
 			
-			_contajner.addEventListener(Event.COMPLETE, handleComplete);
+			_container.addEventListener(Event.COMPLETE, handleComplete);
 		}
 		override public function get progress(): Number
 		{	
-			var NewHourtoMS:Number=getTimer();
+			var newTime:Number=getTimer();
 	
 			trace(getTimer());
 
-			if (NewHourtoMS>(_duration*1000+ _firstTime))
-			{NewHourtoMS=_duration*1000+ _firstTime}
+			if (newTime > (_duration * 1000+ _firstTime))
+			{
+				newTime= _duration * 1000 + _firstTime;
+			}
 			
-			return (NewHourtoMS -_firstTime) / (_duration*1000);
+			return (newTime -_firstTime) / (_duration * 1000);
 		}
 		override public function activate(): void
 		{
